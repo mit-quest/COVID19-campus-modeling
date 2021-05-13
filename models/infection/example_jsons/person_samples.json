@@ -1,0 +1,92 @@
+{
+    "dates": [
+        "2020-08-01",
+        "2020-08-02",
+        "2020-08-03"
+    ],
+    "samples": [
+        {
+            "mit_person_type": "Admin staff",
+            "home_zip": "01845",
+            "commuting_type": "mbta",
+            "age": 14,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "18"
+                    },
+                    {
+                        "building": "32"
+                    },
+                    {
+                        "building": "NW17"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-28"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "01451",
+            "commuting_type": "drive own vehicle",
+            "age": 18,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E60"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-22"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "02151",
+            "commuting_type": "drive own vehicle",
+            "age": 44,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "76"
+                    },
+                    {
+                        "building": "W84"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "02124",
+            "commuting_type": "taxi/uber/lyft",
+            "age": 36,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "24"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Admin staff",
+            "home_zip": "02301",
+            "commuting_type": "other",
+            "age": 36,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "46"
+                    },
+                    {
+                        "building": "37"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-01"
+        }
+    ],
+    "total_population_size": 5069
+}

@@ -1,0 +1,34 @@
+{
+    "model_type": "trajectory",
+    "model_name": "trajectory",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "trajectory",
+    "model_pyclass": "Trajectory",
+    "input_models": [
+        {
+            "model_type": "action",
+            "model_name": "action_demo",
+            "model_id": "V1.0_release2022-03-22",
+            "uuid": "1616515167-action_demo-2020-08-01"
+        },
+        {
+            "model_type": "person",
+            "model_name": "person",
+            "model_id": "V1.0_release2022-03-22",
+            "uuid": "1616515167-person-2020-08-01"
+        }
+    ],
+    "model_parameters": {
+        "random_seed": 125,
+        "start_time_noise_sd": 1,
+        "end_time_noise_sd": 1,
+        "min_length_local_activity": 0.25,
+        "schedule_pmf": "models/trajectory/trajectory/data/arrival_outing_departure_june.json",
+        "go_into_class_pmf": "models/trajectory/trajectory/data/go_into_class_pmf.csv",
+        "go_into_work_pmf": "models/trajectory/trajectory/data/go_into_work_pmf.csv"
+    },
+    "t0_date": "2020-08-01",
+    "n_samples": 5,
+    "uuid": "1616515167-trajectory-2020-08-01",
+    "git_hash": "fc0c5214a1f50f4a28fd1e82e3bff33ceda3196a"
+}

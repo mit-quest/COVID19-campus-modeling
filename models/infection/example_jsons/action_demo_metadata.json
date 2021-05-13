@@ -1,0 +1,24 @@
+{
+    "model_type": "action",
+    "model_name": "action_demo",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "action_demo",
+    "model_pyclass": "ActionDemo",
+    "input_models": [
+        {
+            "model_type": "input",
+            "model_name": "input",
+            "model_id": "input",
+            "uuid": "1616515167-input-2020-08-01"
+        }
+    ],
+    "model_parameters": {
+        "random_seed": 1337,
+        "percent_campus_to_reopen": 75,
+        "percent_buildings_that_were_closed": 90
+    },
+    "t0_date": "2020-08-01",
+    "n_samples": 5,
+    "uuid": "1616515167-action_demo-2020-08-01",
+    "git_hash": "fc0c5214a1f50f4a28fd1e82e3bff33ceda3196a"
+}

@@ -1,0 +1,15 @@
+{
+    "analysis_name": "",
+    "analysis_id": "",
+    "analysis_pyfile": "",
+    "analysis_pyclass": "",
+    "input_models": [
+        {
+            "model_type": "",
+            "model_name": "",
+            "model_id": ""
+        }
+    ],
+    "input_analyses": [],
+    "analysis_parameters": {}
+}

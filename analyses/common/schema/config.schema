@@ -1,0 +1,41 @@
+{
+    "title" : "Analysis Config",
+    "type" : "object",
+    "properties" : {
+        "analysis_name" : {"type" : "string"},
+        "analysis_id" : {"type" : "string"},
+        "analysis_pyfile" : {"type" : "string"},
+        "analysis_pyclass" : {"type" : "string"},
+        "input_models" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/input_model" }
+        },
+        "input_analyses" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/input_analysis"}
+        },
+        "analysis_parameters" : {
+            "type" : "object"
+        }
+    },
+    "required" : ["analysis_name", "analysis_id", "analysis_pyfile", "analysis_pyclass", "input_models", "input_analyses", "analysis_parameters"],
+    "definitions": {
+        "input_model": {
+            "type": "object",
+            "required" : ["model_type", "model_name", "model_id"],
+            "properties" : {
+                "model_type" : {"type" : "string"},
+                "model_name" : {"type" : "string"},
+                "model_id" : {"type" : "string"}
+            }
+        },
+        "input_analysis": {
+            "type": "object",
+            "required" : ["analysis_name", "analysis_id"],
+            "properties" : {
+                "analysis_name" : {"type" : "string"},
+                "analysis_id" : {"type" : "string"}
+            }
+        }
+    }
+}

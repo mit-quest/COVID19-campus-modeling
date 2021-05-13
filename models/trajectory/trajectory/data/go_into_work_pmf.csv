@@ -1,0 +1,8 @@
+weekday_name,day_of_week,prob_go_into_work
+Sunday,1,0.05
+Monday,2,0.2
+Tuesday,3,0.2
+Wednesday,4,0.2
+Thursday,5,0.2
+Friday,6,0.1
+Saturday,7,0.05

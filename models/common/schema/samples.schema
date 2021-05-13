@@ -1,0 +1,21 @@
+{
+    "title" : "Model Samples",
+    "type" : "object",
+    "properties" : {
+        "dates" : {
+            "type" : "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "samples" : {
+            "type" : "array",
+            "items": { "type": ["array", "object"] },
+            "minItems": 1
+        },
+        "use_single_sample": {
+            "type" : "boolean"
+        }
+    },
+    "required" : ["dates", "samples"]
+}

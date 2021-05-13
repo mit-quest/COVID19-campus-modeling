@@ -1,0 +1,29 @@
+{
+    "title" : "Analysis Metadata",
+    "type" : "object",
+    "properties" : {
+        "analysis_name" : {"type" : "string"},
+        "analysis_id" : {"type" : "string"},
+        "uuid" : {"type" : "string"},
+        "git_hash" : {"type" : "string"},
+        "input_models" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/input_model" }
+        },
+        "analysis_parameters" : {
+            "type" : "object"
+        }
+    },
+    "required" : ["analysis_name", "analysis_id", "uuid", "input_models", "analysis_parameters", "git_hash"],
+    "definitions": {
+        "input_model": {
+            "type": "object",
+            "required" : ["model_type", "model_name", "model_id"],
+            "properties" : {
+                "model_type" : {"type" : "string"},
+                "model_name" : {"type" : "string"},
+                "model_id" : {"type" : "string"}
+            }
+        }
+    }
+}

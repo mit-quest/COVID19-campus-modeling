@@ -1,0 +1,46 @@
+{
+    "analysis_name": "observations_and_model_distributions",
+    "analysis_id": "V0.1",
+    "analysis_pyfile": "observations_and_model_distributions",
+    "analysis_pyclass": "ScenarioObservationsModelDistributions",
+    "input_models": [
+        {
+            "model_type": "trajectory",
+            "model_name": "trajectory",
+            "model_id": "V1.0_release2022-03-22"
+        }
+    ],
+    "input_analyses": [],
+    "analysis_parameters": {
+        "random_seed": 0,
+        "n_bootstraps": 5,
+        "percentiles": [
+            10,
+            50,
+            90
+        ],
+        "datasets_to_include": {
+            "occupancy": [
+                {
+                    "name": "wifi",
+                    "path": "analyses/observations_and_model_distributions/data/1600486214-wifi-unique-daily_results.json",
+                    "building_key_name": "unique_devices_per_building_per_day",
+                    "campus_key_name": "unique_devices_per_day"
+                },
+                {
+                    "name": "card_reader",
+                    "path": "analyses/observations_and_model_distributions/data/1600957418-card_reader_unique_dict.json",
+                    "building_key_name": "unique_individuals_per_building_per_day",
+                    "campus_key_name": "unique_individuals_per_day"
+                },
+                {
+                    "name": "attestation",
+                    "path": "analyses/observations_and_model_distributions/data/1600957418-attestations_unique_dict.json",
+                    "building_key_name": "unique_individuals_per_building_per_day",
+                    "campus_key_name": "unique_individuals_per_day"
+                }
+            ],
+            "inflow": []
+        }
+    }
+}

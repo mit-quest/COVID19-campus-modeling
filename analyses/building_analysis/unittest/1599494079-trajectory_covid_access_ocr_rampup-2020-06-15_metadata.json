@@ -1,0 +1,25 @@
+{
+    "model_type": "trajectory",
+    "model_name": "trajectory_covid_access_ocr_rampup",
+    "model_id": "V1.1_2020-07-23",
+    "model_pyfile": "trajectory_covid_access_ocr_rampup",
+    "model_pyclass": "TrajectoryGeneratorCovidAccessRampup",
+    "input_models": [
+        {
+            "model_type": "person",
+            "model_name": "person_joint_sampling_covid_access_ocr_rampup",
+            "model_id": "V1.0_2020-07-23",
+            "uuid": "1599494079-person_joint_sampling_covid_access_ocr_rampup-2020-06-15"
+        }
+    ],
+    "model_parameters": {
+        "random_seed": 125,
+        "schedule_pmf": "models/trajectory/trajectory_covid_access_ocr_rampup/data/schedule_pmf.csv",
+        "go_into_class_probs": "models/trajectory/trajectory_covid_access_ocr_rampup/data/go_into_class_probs.csv",
+        "go_into_work_probs": "models/trajectory/trajectory_covid_access_ocr_rampup/data/go_into_work_probs.csv"
+    },
+    "t0_date": "2020-06-15",
+    "n_samples": 100,
+    "uuid": "1599494079-trajectory_covid_access_ocr_rampup-2020-06-15",
+    "git_hash": "ec8ebfb30af9f6609a30ca936b8b19e8fff3f313"
+}

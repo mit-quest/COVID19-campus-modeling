@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="../static/images/favicon.png">
+  <link rel="stylesheet" href="../static/external/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="shortcut icon" href="../static/images/logo-mit.svg">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark fixed-top navbar-expand-sm">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul id="navbar-pages" class="navbar-nav mr-auto">
+          <!-- filled by javascript from .page class -->
+        </ul>
+        <ul class="nav navbar-nav ml-auto navbar-right">
+          <li id="t0-li" class="d-none">
+            <a id="t0-a" href="#">Disabled</a>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN APP -->
+  <div id="app" class="container-fluid tab-content">
+
+    <!-- HOME -->
+    <div id="page-home" data-title="Home" class="row page page-without-submenu">
+
+      <!-- TITLE -->
+      <div id="div-home" class="col-12">
+        <h1>Data Visualization Home</h1>
+        <ul>
+          <li><a href="./forecast">Forecast Data</a></li>
+          <li><a href="./situational-awareness">Situational Awareness Data</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- External -->
+  <script src="../static/external/jquery/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="../static/external/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+  <!-- Custom -->
+  <script src="../static/js/main/set-title.js"></script>
+
+</body>
+</html>

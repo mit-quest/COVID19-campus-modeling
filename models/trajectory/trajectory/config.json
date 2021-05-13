@@ -1,0 +1,28 @@
+{
+    "model_type": "trajectory",
+    "model_name": "trajectory",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "trajectory",
+    "model_pyclass": "Trajectory",
+    "input_models": [
+        {
+            "model_type": "action",
+            "model_name": "action_demo",
+            "model_id": "V1.0_release2022-03-22"
+        },
+        {
+            "model_type": "person",
+            "model_name": "person",
+            "model_id": "V1.0_release2022-03-22"
+        }
+    ],
+    "model_parameters": {
+        "random_seed": 125,
+        "start_time_noise_sd": 1,
+        "end_time_noise_sd": 1,
+        "min_length_local_activity": 0.25,
+        "schedule_pmf": "models/trajectory/trajectory/data/schedule.csv",
+        "go_into_class_pmf": "models/trajectory/trajectory/data/go_into_class_pmf.csv",
+        "go_into_work_pmf": "models/trajectory/trajectory/data/go_into_work_pmf.csv"
+    }
+}

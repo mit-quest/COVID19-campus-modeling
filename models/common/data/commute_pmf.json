@@ -1,0 +1,8 @@
+{
+    "Bike": 0.8,
+    "Drive own vehicle": 0.05,
+    "MBTA": 0.05,
+    "Taxi/Uber/Lyft": 0.05,
+    "Walk": 0.04,
+    "other": 0.01
+}

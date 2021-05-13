@@ -1,0 +1,340 @@
+{
+    "dates": [
+        "2020-08-01",
+        "2020-08-02"
+    ],
+    "samples": [
+        {
+            "mit_person_type": "Admin staff",
+            "home_zip": "01845",
+            "commuting_type": "mbta",
+            "age": 20,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "18"
+                    },
+                    {
+                        "building": "32"
+                    },
+                    {
+                        "building": "NW17"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-28"
+        },
+        {
+            "mit_person_type": "Graduate student",
+            "home_zip": "01451",
+            "commuting_type": "mbta",
+            "age": 22,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "W59"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-03"
+        },
+        {
+            "mit_person_type": "Undergraduate student",
+            "home_zip": "02139",
+            "commuting_type": "walk",
+            "age": 21,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E19"
+                    },
+                    {
+                        "building": "2"
+                    },
+                    {
+                        "building": "8"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Support staff",
+            "home_zip": "02108",
+            "commuting_type": "walk",
+            "age": 39,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E15"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-17"
+        },
+        {
+            "mit_person_type": "Admin staff",
+            "home_zip": "02452",
+            "commuting_type": "drive own vehicle",
+            "age": 49,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "18"
+                    },
+                    {
+                        "building": "W7"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-05"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "01970",
+            "commuting_type": "drive own vehicle",
+            "age": 55,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "26"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "02190",
+            "commuting_type": "drive own vehicle",
+            "age": 29,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E90"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-30"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "02190",
+            "commuting_type": "drive own vehicle",
+            "age": 34,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "10"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Graduate student",
+            "home_zip": "01845",
+            "commuting_type": "mbta",
+            "age": 43,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "OC19B"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-10"
+        },
+        {
+            "mit_person_type": "Service staff",
+            "home_zip": "02128",
+            "commuting_type": "bike",
+            "age": 38,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "1"
+                    },
+                    {
+                        "building": "NW14"
+                    },
+                    {
+                        "building": "E55"
+                    },
+                    {
+                        "building": "46"
+                    },
+                    {
+                        "building": "56"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-20"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "02169",
+            "commuting_type": "mbta",
+            "age": 26,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E51"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-27"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "02142",
+            "commuting_type": "bike",
+            "age": 62,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "NW23"
+                    },
+                    {
+                        "building": "W98"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-01"
+        },
+        {
+            "mit_person_type": "Undergraduate student",
+            "home_zip": "02139",
+            "commuting_type": "walk",
+            "age": 24,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "16"
+                    },
+                    {
+                        "building": "48"
+                    },
+                    {
+                        "building": "5"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Graduate student",
+            "home_zip": "01890",
+            "commuting_type": "mbta",
+            "age": 34,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "76"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Graduate student",
+            "home_zip": "01730",
+            "commuting_type": "mbta",
+            "age": 33,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "46"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-07-15"
+        },
+        {
+            "mit_person_type": "Service staff",
+            "home_zip": "02459",
+            "commuting_type": "mbta",
+            "age": 64,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "5"
+                    },
+                    {
+                        "building": "2"
+                    },
+                    {
+                        "building": "68"
+                    },
+                    {
+                        "building": "32"
+                    },
+                    {
+                        "building": "8"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "01960",
+            "commuting_type": "mbta",
+            "age": 43,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "26"
+                    },
+                    {
+                        "building": "W32"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-22"
+        },
+        {
+            "mit_person_type": "Admin staff",
+            "home_zip": "02180",
+            "commuting_type": "drive own vehicle",
+            "age": 48,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E40"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Support staff",
+            "home_zip": "01902",
+            "commuting_type": "drive own vehicle",
+            "age": 25,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "32P"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        },
+        {
+            "mit_person_type": "Research staff",
+            "home_zip": "01810",
+            "commuting_type": "drive own vehicle",
+            "age": 34,
+            "building_and_core_access": [
+                [
+                    {
+                        "building": "E15"
+                    }
+                ]
+            ],
+            "first_day_returning": "2020-06-15"
+        }
+    ],
+    "total_population_size": 5009
+}

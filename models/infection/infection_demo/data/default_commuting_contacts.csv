@@ -1,0 +1,7 @@
+commuting_type,contacts_per_hour
+drive own vehicle,0
+mbta,15
+taxi/uber/lyft,1
+bike,3
+walk,5
+other,2

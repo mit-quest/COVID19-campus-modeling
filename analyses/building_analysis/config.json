@@ -1,0 +1,28 @@
+{
+    "analysis_name": "building-occupancy-statistics",
+    "analysis_id": "V0.1",
+    "analysis_pyfile": "building_statistics",
+    "analysis_pyclass": "ScenarioBuildingStatisticsAnalysis",
+    "input_models": [
+        {
+            "model_type": "trajectory",
+            "model_name": "trajectory",
+            "model_id": "V1.0_release2022-03-22"
+        }
+    ],
+    "input_analyses": [],
+    "analysis_parameters": {
+        "random_seed": 0,
+        "lunch_start": "11:00",
+        "lunch_end": "15:00",
+        "unittest_mode": false,
+        "n_bootstraps": 5,
+        "time_freq": "60min",
+        "output_hourly": true,
+        "percentiles": [
+            10,
+            50,
+            90
+        ]
+    }
+}

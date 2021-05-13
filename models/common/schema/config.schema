@@ -1,0 +1,32 @@
+{
+    "title" : "Model Config",
+    "type" : "object",
+    "properties" : {
+        "model_type" : {"type" : "string"},
+        "model_name" : {"type" : "string"},
+        "model_id" : {"type" : "string"},
+        "model_pyfile" : {"type" : "string"},
+        "model_pyclass" : {"type" : "string"},
+        "input_models" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/input_model" }
+        },
+        "model_parameters" : {
+            "type" : "object"
+        },
+        "run_unittest" : {"type" : "boolean"},
+        "use_docker" : {"type" : "boolean"}
+    },
+    "required" : ["model_type", "model_name", "model_id", "model_pyfile", "model_pyclass", "input_models", "model_parameters"],
+    "definitions": {
+        "input_model": {
+            "type": "object",
+            "required" : ["model_type", "model_name", "model_id"],
+            "properties" : {
+                "model_type" : {"type" : "string"},
+                "model_name" : {"type" : "string"},
+                "model_id" : {"type" : "string"}
+            }
+        }
+    }
+}

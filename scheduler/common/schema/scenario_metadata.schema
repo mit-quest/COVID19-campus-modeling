@@ -1,0 +1,81 @@
+{
+    "title" : "Scenario metadata file",
+    "type" : "object",
+    "properties" : {
+        "uuid_prefix" : {"type" : "string"},
+        "git_hash" : {"type" : "string"},
+        "base_scenario_config" : {"type" : "string"},
+        "base_models" : {
+            "type" : "array",
+            "items": { "type": "string" }
+        },
+        "base_analyses" : {
+            "type" : "array",
+            "items": { "type": "string" }
+        },
+        "scenario_parameters" : {
+            "type" : "object",
+            "properties" : {
+                "description" : {"type" : "string"},
+                "t0_date" : {"type" : "string"},
+                "n_samples" : {"type" : "integer"},
+                "n_days_to_simulate" : {"type" : "integer"},
+                "run_unittest" : {"type" : "boolean"}
+            },
+            "required" : ["description", "t0_date", "n_samples", "n_days_to_simulate"],
+            "additionalProperties": false
+        },
+        "model_parameters" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/model_param_obj" }
+        },
+        "analysis_parameters" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/analysis_param_obj" }
+        },
+        "batch_scenarios" : {
+            "type": "array",
+            "items": {"type": "string" }
+        },
+        "within_batch_uuid" : {
+            "type": "string"
+        }
+    },
+    "required" : ["uuid_prefix", "git_hash", "base_scenario_config", "base_models", "base_analyses", "scenario_parameters", "model_parameters", "analysis_parameters", "batch_scenarios"],
+    "additionalProperties": false,
+    "definitions": {
+        "model_param_obj": {
+            "type": "object",
+            "properties" : {
+                "model_name" : {"type" : "string"},
+                "parameters" : {
+                    "type" : "array",
+                    "items" : { "$ref" : "#/definitions/param_obj" }
+                }
+            },
+            "required" : ["model_name", "parameters"],
+            "additionalProperties": false
+        },
+        "analysis_param_obj": {
+            "type": "object",
+            "properties" : {
+                "analysis_name" : {"type" : "string"},
+                "parameters" : {
+                    "type" : "array",
+                    "items" : { "$ref" : "#/definitions/param_obj" }
+                }
+            },
+            "required" : ["analysis_name", "parameters"],
+            "additionalProperties": false
+        },
+        "param_obj" : {
+            "type": "object",
+            "properties" : {
+                "name" : {"type" : "string"},
+                "value" : { "type" : ["number", "string"]}
+            },
+            "required" : ["name", "value"],
+            "additionalProperties": false
+        }
+    }
+}

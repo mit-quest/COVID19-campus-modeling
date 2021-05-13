@@ -1,0 +1,96 @@
+{
+    "title" : "Batch config file",
+    "type" : "object",
+    "properties" : {
+        "description" : {"type" : "string"},
+        "sensitivity_parameters" : {
+            "type" : "object",
+            "properties" : {
+                "cov_sparse" : {"type" : "array"},
+                "n_sensitivity_samples" : {"type" : "number"},
+                "random_seed" : {"type" : "number"}
+            },
+            "required" : ["cov_sparse", "n_sensitivity_samples", "random_seed"],
+            "additionalProperties": false
+        },
+        "scenario_parameters" : {
+            "type" : "object",
+            "properties" : {
+                "scenario_config" : {"type" : "string"},
+                "params_to_change" : {
+                    "type" : "array",
+                    "items" : {
+                        "type" : "object",
+                        "properties" : {
+                            "name" : {"type" : "string"},
+                            "value" : {"type" : ["number", "string"]}
+                        }
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "model_parameters" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/model_param_obj" }
+        },
+        "analysis_parameters" : {
+            "type" : "array",
+            "items": { "$ref": "#/definitions/analysis_param_obj" }
+        },
+        "n_sensitivity_samples" : {
+            "type" : "number"
+        }
+    },
+    "required" : ["description", "scenario_parameters", "model_parameters", "analysis_parameters"],
+    "definitions": {
+        "model_param_obj": {
+            "type": "object",
+            "properties" : {
+                "model_config" : {"type" : "string"},
+                "params_to_vary" : {
+                    "type" : "array",
+                    "items" : { "$ref" : "#/definitions/param_dist_obj" }
+                }
+            },
+            "required" : ["model_config", "params_to_vary"],
+            "additionalProperties": false
+        },
+        "analysis_param_obj": {
+            "type": "object",
+            "properties" : {
+                "analysis_config" : {"type" : "string"},
+                "params_to_change" : {
+                    "type" : "array",
+                    "items" : { "$ref" : "#/definitions/param_obj" }
+                }
+            },
+            "required" : ["analysis_config", "params_to_change"],
+            "additionalProperties": false
+        },
+        "param_obj" : {
+            "type": "object",
+            "properties" : {
+                "name" : {"type" : "string"},
+                "values" : {
+                    "type" : "array",
+                    "items" : { "type" : ["number", "string"]}
+                }
+            },
+            "required" : ["name", "values"],
+            "additionalProperties": false
+        },
+        "param_dist_obj" : {
+            "type": "object",
+            "properties" : {
+                "name" : {"type" : "string"},
+                "marginal" : {
+                    "type" : "array",
+                    "items" : { "type" : ["number", "string", "array"]}
+                }
+            },
+            "required" : ["name", "marginal"],
+            "additionalProperties": false
+        }
+    }
+}

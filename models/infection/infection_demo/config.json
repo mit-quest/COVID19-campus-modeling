@@ -1,0 +1,32 @@
+{
+    "model_type": "infection",
+    "model_name": "infection_demo",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "infection_demo",
+    "model_pyclass": "InfectionDemo",
+    "input_models": [
+        {
+            "model_type": "prevalence",
+            "model_name": "prevalence_demo",
+            "model_id": "V1.0_release2022-03-22"
+        },
+        {
+            "model_type": "person",
+            "model_name": "person",
+            "model_id": "V1.0_release2022-03-22"
+        },
+        {
+            "model_type": "trajectory",
+            "model_name": "trajectory",
+            "model_id": "V1.0_release2022-03-22"
+        }
+    ],
+    "model_parameters": {
+        "prob_interactions_infect": 0.01,
+        "zip_codes_data": "models/common/data/mit_zip_code_list_with_distance.csv",
+        "commuting_contacts_per_hour": "models/infection/infection_demo/data/default_commuting_contacts.csv",
+        "prob_shared_space_infect": 0.001,
+        "random_seed": 125,
+        "distance_per_hour": 20
+    }
+}

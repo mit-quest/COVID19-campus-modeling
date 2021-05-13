@@ -1,0 +1,217 @@
+{
+    "dates": [
+        "2020-08-01",
+        "2020-08-02",
+        "2020-08-03"
+    ],
+    "samples": [
+        [
+            [],
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "mbta",
+                    "start_zip_code": "01845",
+                    "arrival_time": "14:08"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "14:08",
+                    "end_time": "19:12"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "NW17",
+                    "start_time": "19:12",
+                    "end_time": "23:59"
+                }
+            ],
+            [
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "NW17",
+                    "start_time": "00:00",
+                    "end_time": "09:03"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "09:03",
+                    "end_time": "14:08"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "mbta",
+                    "end_zip_code": "01845",
+                    "departure_time": "14:08"
+                }
+            ]
+        ],
+        [
+            [],
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "drive own vehicle",
+                    "start_zip_code": "01451",
+                    "arrival_time": "20:05"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "20:05",
+                    "end_time": "22:51"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "drive own vehicle",
+                    "end_zip_code": "01451",
+                    "departure_time": "22:51"
+                }
+            ],
+            []
+        ],
+        [
+            [],
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "drive own vehicle",
+                    "start_zip_code": "02151",
+                    "arrival_time": "07:49"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "07:49",
+                    "end_time": "15:26"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "W84",
+                    "start_time": "15:26",
+                    "end_time": "15:59"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "drive own vehicle",
+                    "end_zip_code": "02151",
+                    "departure_time": "15:59"
+                }
+            ],
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "drive own vehicle",
+                    "start_zip_code": "02151",
+                    "arrival_time": "14:22"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "W84",
+                    "start_time": "14:22",
+                    "end_time": "14:32"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "76",
+                    "start_time": "14:32",
+                    "end_time": "15:00"
+                },
+                {
+                    "stay_type": "local_activity",
+                    "location": null,
+                    "start_time": "15:00",
+                    "end_time": "15:53"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "76",
+                    "start_time": "15:53",
+                    "end_time": "19:23"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "drive own vehicle",
+                    "end_zip_code": "02151",
+                    "departure_time": "19:23"
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "taxi/uber/lyft",
+                    "start_zip_code": "02124",
+                    "arrival_time": "01:37"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "01:37",
+                    "end_time": "3:00"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "taxi/uber/lyft",
+                    "end_zip_code": "02124",
+                    "departure_time": "3:00"
+                }
+            ],
+            [],
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "taxi/uber/lyft",
+                    "start_zip_code": "02124",
+                    "arrival_time": "09:17"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "09:17",
+                    "end_time": "12:40"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "taxi/uber/lyft",
+                    "end_zip_code": "02124",
+                    "departure_time": "12:40"
+                }
+            ]
+        ],
+        [
+            [],
+            [],
+            [
+                {
+                    "stay_type": "commute",
+                    "commute_type": "other",
+                    "start_zip_code": "02301",
+                    "arrival_time": "08:10"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "08:10",
+                    "end_time": "08:40"
+                },
+                {
+                    "stay_type": "on_campus_inside",
+                    "building": "outside",
+                    "start_time": "08:40",
+                    "end_time": "13:17"
+                },
+                {
+                    "stay_type": "commute",
+                    "commute_type": "other",
+                    "end_zip_code": "02301",
+                    "departure_time": "13:17"
+                }
+            ]
+        ]
+    ],
+    "total_population_size": 5069
+}

@@ -1,0 +1,23 @@
+{
+    "analysis_name": "campus-statistics",
+    "analysis_id": "V0.1",
+    "analysis_pyfile": "campus-statistics",
+    "analysis_pyclass": "ScenarioCampusStatistics",
+    "input_models": [
+        {
+            "model_type": "trajectory",
+            "model_name": "trajectory",
+            "model_id": "V1.0_release2022-03-22"
+        }
+    ],
+    "input_analyses": [],
+    "analysis_parameters": {
+        "random_seed": 0,
+        "n_bootstraps": 5,
+        "percentiles": [
+            10,
+            50,
+            90
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "model_type": "action",
+    "model_name": "action_demo",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "action_demo",
+    "model_pyclass": "ActionDemo",
+    "input_models": [],
+    "model_parameters": {
+        "random_seed": 1337,
+        "percent_campus_to_reopen": 75,
+        "percent_buildings_that_were_closed": 90
+    }
+}

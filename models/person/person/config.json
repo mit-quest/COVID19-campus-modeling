@@ -1,0 +1,191 @@
+{
+    "model_type": "person",
+    "model_name": "person",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "person",
+    "model_pyclass": "Person",
+    "input_models": [],
+    "model_parameters": {
+        "random_seed": 521,
+        "students_frac": 0.086,
+        "people_to_inject": {
+            "2020-06-15": [
+                {
+                    "type": "Research staff",
+                    "on_campus": false,
+                    "amount": 514
+                },
+                {
+                    "type": "Admin staff",
+                    "on_campus": false,
+                    "amount": 216
+                },
+                {
+                    "type": "Support staff",
+                    "on_campus": false,
+                    "amount": 113
+                },
+                {
+                    "type": "Faculty",
+                    "on_campus": false,
+                    "amount": 102
+                },
+                {
+                    "type": "Service staff",
+                    "on_campus": false,
+                    "amount": 400
+                },
+                {
+                    "type": "Medical staff",
+                    "on_campus": false,
+                    "amount": 20
+                },
+                {
+                    "type": "Graduate student",
+                    "on_campus": false,
+                    "amount": 184
+                },
+                {
+                    "type": "Graduate student",
+                    "on_campus": true,
+                    "amount": 330
+                },
+                {
+                    "type": "Undergraduate student",
+                    "on_campus": true,
+                    "amount": 250
+                }
+            ],
+            "2020-08-29": [
+                {
+                    "type": "Graduate student",
+                    "on_campus": true,
+                    "amount": 685
+                },
+                {
+                    "type": "Undergraduate student",
+                    "on_campus": true,
+                    "amount": 325
+                }
+            ],
+            "2020-08-30": [
+                {
+                    "type": "Graduate student",
+                    "on_campus": true,
+                    "amount": 685
+                },
+                {
+                    "type": "Undergraduate student",
+                    "on_campus": true,
+                    "amount": 325
+                }
+            ]
+        },
+        "population_daily_increase": [
+            {
+                "type": "Research staff",
+                "on_campus": false,
+                "amount": 19.5
+            },
+            {
+                "type": "Admin staff",
+                "on_campus": false,
+                "amount": 8.2
+            },
+            {
+                "type": "Support staff",
+                "on_campus": false,
+                "amount": 4.3
+            },
+            {
+                "type": "Faculty",
+                "on_campus": false,
+                "amount": 3.9
+            },
+            {
+                "type": "Service staff",
+                "on_campus": false,
+                "amount": 2.3
+            },
+            {
+                "type": "Medical staff",
+                "on_campus": false,
+                "amount": 0.8
+            },
+            {
+                "type": "Graduate student",
+                "on_campus": false,
+                "amount": 21.0
+            }
+        ],
+        "student_classroom_buildings": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "8",
+            "9",
+            "10",
+            "13",
+            "14",
+            "16",
+            "24",
+            "26",
+            "32",
+            "33",
+            "35",
+            "36",
+            "37",
+            "38",
+            "48",
+            "50",
+            "54",
+            "56",
+            "66",
+            "E15",
+            "E17",
+            "E19",
+            "E25",
+            "E51",
+            "E52",
+            "E62"
+        ],
+        "on_campus_student_dorms": [
+            "W7",
+            "W51",
+            "62",
+            "64",
+            "W61",
+            "W1",
+            "W4",
+            "W70",
+            "W71",
+            "W46",
+            "NW61",
+            "W79",
+            "E2",
+            "NW35",
+            "NW10",
+            "E37",
+            "NW86",
+            "W84",
+            "NW30",
+            "W85",
+            "W51",
+            "W51C",
+            "W5"
+        ],
+        "n_different_classroom_buildings_per_student": 3,
+        "building_assignment_pmf": "models/person/person/data/building_pmf.csv",
+        "mit_person_type_pmf": "models/common/data/mit_person_type_pmf.csv",
+        "mit_person_age_pdf": "models/common/data/mit_person_age_pdf.csv",
+        "commute_cond_person_pmf": "models/common/data/commute_pmf.json",
+        "zip_to_commute_mapping": "models/common/data/zip_cond_commute_list.csv",
+        "service_staff_min": 400,
+        "service_staff_max": 600,
+        "service_staff_occupancy_percent": 25.0,
+        "service_staff_building_visited": 5
+    }
+}

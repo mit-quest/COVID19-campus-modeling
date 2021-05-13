@@ -1,0 +1,32 @@
+.idea
+venv
+__pycache__
+mc_simulation/tmp
+.ipynb_checkpoints
+keys/*
+.terraform
+.terraform.tfstate.lock.info
+terraform.tfstate
+terraform.tfstate.backup
+.DS_Store
+tmp
+simulation_samples
+analysis_output
+local_outputs
+models/tmp
+models/*/example_jsons/output_*
+models/*/*/tmp*
+api_server/src/schema
+*.pyc
+tests/data/output_*
+
+# ignore frontend caches and latest
+frontend/cached
+frontend/latest.txt
+
+# Ignore artifacts produced by inferenceQL
+frontend/inferenceql/data.csv
+frontend/inferenceql/schema.edn
+frontend/inferenceql/covid-health-management-system-copy/
+frontend/inferenceql/config.json
+frontend/inferenceql/current_scenario.json

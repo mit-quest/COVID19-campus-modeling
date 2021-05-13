@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/png" href="../static/images/favicon.png">
+  <link rel="stylesheet" href="../static/external/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <script src="../static/external/plotly/plotly.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark fixed-top navbar-expand-sm">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul id="navbar-pages" class="navbar-nav mr-auto">
+          <!-- filled by javascript from .page class -->
+        </ul>
+        <ul class="nav navbar-nav ml-auto navbar-right">
+          <li id="t0-li" class="d-none">
+            <a id="t0-a" href="#">Disabled</a>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PRELOADER -->
+  <div class="modal fade" id="preloader" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Loading data and preparing report</h5>
+        </div>
+        <div class="modal-body">
+          <p>this dialog will close automatically when complete</p>
+          <div class="spinner-border" role="status"></div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATA LOAD ERROR -->
+  <div class="modal fade" id="data-load-error" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Data Load Error</h5>
+        </div>
+        <div class="modal-body">
+          <p>this is likely a missing or errorneous UUID, or less likely corrupt data.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- MAIN APP -->
+  <div id="app" class="container-fluid tab-content">
+
+    <!-- HOME -->
+    <div id="page-home" data-title="Home" class="row page page-without-submenu d-none">
+
+      <!-- TITLE -->
+      <div id="div-home" class="col-12">
+        <h1>Risk Model Data Visualizations</h1>
+      </div>
+
+      <div class="col-12">
+        <h2>All Available UUIDS (Sorted Newest to Oldest)</h2>
+        <p>Click on the desired UUID below to produce a new report</p>
+        <!-- JavaScript will target the element below to append li's -->
+        <ul id="uuid-list"></ul>
+      </div>
+
+    </div>
+
+    <!-- FORECASTED DATA -->
+    <div id="page-simulation" data-title="Simulation" class="row page page-with-submenu d-none">
+
+      <!-- NAV - you can add items and they will be handled automatically, but the struture is used programmatically so do not change nesting -->
+      <nav class="col-12 navbar navbar-light bg-light question-submenu fixed-top">
+        <form class="form-inline question-selector">
+          <span id="controls-simulation" class="dropdown question-dropdown">
+            <button type="button" class="dropdown-toggle btn btn-secondary" data-toggle="dropdown">
+              Select Question
+            </button>
+            <div class="dropdown-menu">
+              <button type="button" class="dropdown-item btn btn-link">
+                What populations were simulated?
+              </button>
+              <button type="button" class="dropdown-item btn btn-link">
+                What is the forecasted building usage across campus?
+              </button>
+            </div>
+          </span>
+          <span id="title-simulation"></span>
+        </form>
+      </nav>
+
+      <!-- TITLE -->
+      <div class="col-12">
+          <h1>Simulation Details and Forecasts</h1>
+          <!-- <p>The menu above will let you choose which question you are most interested in data to support.</p> -->
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- External -->
+  <script src="../static/external/jquery/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="../static/external/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+  <!-- Custom -->
+  <script src="../static/js/forecast/set-title.js"></script>
+  <script src="../static/js/forecast/globals.js"></script>
+  <script src="../static/js/forecast/plot-ops.js"></script>
+  <script src="../static/js/forecast/app-ops.js"></script>
+  <script src="../static/js/forecast/window-ops.js"></script>
+
+</body>
+</html>

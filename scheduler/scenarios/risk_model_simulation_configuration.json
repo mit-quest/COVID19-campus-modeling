@@ -1,0 +1,21 @@
+{
+    "scenario_parameters": {
+        "description": "release scenario placeholder",
+        "t0_date": "2020-08-01",
+        "n_samples": 1000,
+        "n_days_to_simulate": 7
+    },
+    "models": [
+        "models/prevalence/prevalence_demo/config.json",
+        "models/action/action_demo/config.json",
+        "models/person/person/config.json",
+        "models/trajectory/trajectory/config.json",
+        "models/infection/infection_demo/config.json",
+        "models/health_harm/health_harm_demo/config.json"
+    ],
+    "analyses": [
+        "analyses/person_analysis/config.json",
+        "analyses/building_analysis/config.json",
+        "analyses/campus_analysis/config.json"
+    ]
+}

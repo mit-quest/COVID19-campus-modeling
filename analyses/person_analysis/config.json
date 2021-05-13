@@ -1,0 +1,23 @@
+{
+    "analysis_name": "demographic-analysis-statistics",
+    "analysis_id": "V0.1",
+    "analysis_pyfile": "demographic_statistics",
+    "analysis_pyclass": "ScenarioDemographicStatisticsAnalysis",
+    "input_models": [
+        {
+            "model_type": "person",
+            "model_name": "person",
+            "model_id": "V1.0_release2022-03-22"
+        }
+    ],
+    "input_analyses": [],
+    "analysis_parameters": {
+        "random_seed": 0,
+        "n_bootstraps": 5,
+        "percentiles": [
+            10,
+            50,
+            90
+        ]
+    }
+}

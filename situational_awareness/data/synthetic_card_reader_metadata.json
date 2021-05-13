@@ -1,0 +1,11 @@
+{
+    "git_hash": "",
+    "historical_id": "V2.0",
+    "historical_name": "card_reader",
+    "historical_parameters": {
+        "title": "card_reader historical analysis",
+        "interval_date_start": "2021-01-13",
+        "interval_date_end": "2021-04-13 23:00:00"
+    },
+    "uuid": "synthetic_card_reader"
+}

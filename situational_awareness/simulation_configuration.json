@@ -1,0 +1,84 @@
+{
+    "simulation_version_id": "V3.0",
+    "simulation_version_date": "2021-03-16",
+    "simulation_pyfile": "situational_analysis",
+    "simulation_experiment_name": "spring_injection_april_7_2021",
+    "simulation_parameters": {
+        "seed": 1337,
+        "log_file_location": "situational_awareness/logs",
+        "inject_in_person_class_headcount": true,
+        "in_person_class_headcount": "situational_awareness/data/class_schedule_injection.json.gz",
+        "limited_buiding_list": false,
+        "data_parameters": {
+            "duration_pmf": "situational_awareness/data/synthetic_wifi_durations.json",
+            "transition_probs": "situational_awareness/data/synthetic_wifi_transitions.json",
+            "cardreader_data": "situational_awareness/data/synthetic_card_reader.json.gz",
+            "cardreader_metadata": "situational_awareness/data/synthetic_card_reader_metadata.json",
+            "cardreader_key_name": "first_daily_inflow"
+        },
+        "ground_truthing": false,
+        "ground_truthing_parameters": {
+            "ground_truth_end_of_backwards_window": "2020-10-28 08:00",
+            "ground_truth_day": "situational_awareness/data/ground_truth_example.json"
+        },
+        "io_dir": "local_outputs/situational_awareness",
+        "fit_n_hours_window_backward": 672,
+        "simulate_n_hours_window_backward": 336,
+        "simulate_n_hours_window_forward": 336,
+        "plot_n_hours_window_backward": 336,
+        "plot_n_hours_window_forward": 336,
+        "n_replications": 50,
+        "percentiles_list": [
+            10,
+            50,
+            90
+        ],
+        "plot": false,
+        "plot_location": "situational_awareness/plots",
+        "model_name": "empirical_situational_model",
+        "building_transition_function": "run_transition_swipe_to_assigned_building",
+        "num_trials_assignments": 30,
+        "num_trials_transitions": 10,
+        "debug_building_list": [
+            "1",
+            "2"
+        ],
+        "student_holidays": [
+            [
+                "2020-12-09",
+                "2021-02-16"
+            ],
+            "2021-03-08",
+            "2021-03-22",
+            "2021-03-23",
+            "2021-04-19",
+            "2021-04-20",
+            "2021-05-07",
+            "2021-05-31",
+            [
+                "2021-02-16",
+                "2021-09-07"
+            ]
+        ],
+        "staff_holidays": [
+            "2020-09-07",
+            "2020-10-12",
+            "2020-11-11",
+            [
+                "2020-05-20",
+                "2020-11-27"
+            ],
+            [
+                "2020-12-24",
+                "2021-01-04"
+            ],
+            "2021-01-18",
+            "2021-02-15",
+            "2021-04-19",
+            "2021-05-31",
+            "2021-09-06",
+            "2021-10-11",
+            "2021-11-11"
+        ]
+    }
+}

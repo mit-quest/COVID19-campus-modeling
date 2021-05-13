@@ -1,0 +1,12 @@
+{
+    "model_type": "prevalence",
+    "model_name": "prevalence_demo",
+    "model_id": "V1.0_release2022-03-22",
+    "model_pyfile": "prevalence_demo",
+    "model_pyclass": "PrevalenceDemo",
+    "input_models": [],
+    "model_parameters": {
+        "random_seed": 632,
+        "zip_code_fpath": "models/common/data/zip_code_list.txt"
+    }
+}

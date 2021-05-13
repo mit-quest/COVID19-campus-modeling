@@ -1,0 +1,134 @@
+html, body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* 35px for top navbar and 35px for secondary navbar */
+}
+
+#page-home {
+  padding-top: 8vh;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+
+#title-home {
+  padding-bottom: 6vh;
+  font-weight: bold;
+}
+
+.custom-combobox {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-combobox-input {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.custom-combobox-toggle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	padding: 0;
+}
+
+.ui-autocomplete {
+  max-height: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.question-submenu {
+  margin-top: 70px;
+  border-bottom: 2px solid blue;
+}
+
+.question-selector {
+  font-size: 1.15em;
+  font-weight: bolder;
+}
+
+hr {
+  border-top: 1px solid black;
+}
+
+.question-dropdown {
+  padding-right: 0.5em;
+}
+
+/* http://getbootstrap.com.vn/examples/equal-height-columns/ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plot-title {
+  font-size: 1.15em;
+  border-bottom: 2px solid lightblue;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* NAVBAR STYLES */
+
+.navbar {
+  background: rgb(46, 46, 46);
+}
+
+.navbar-page {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-page:hover {
+  color: lightgrey;
+  background-color: rgb(30, 30, 30);
+}
+
+.navbar-nav > .active {
+  background: green;
+}
+
+/* MAIN APP STYLES */
+.graphic-buffer {
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-right: 10px;
+}
+
+.display-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#t0-a {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* .graphics-div {
+  padding: 10px;
+} */
+
+.graphic-pane {
+  border: 2px solid lightblue;
+}
+
+.graphics-container {
+  padding: 10px;
+}
+
+.page-without-submenu {
+  margin-top: -55px;
+}
+
+.png {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.hovertemplate {
+  background-color: black;
+}
