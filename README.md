@@ -8,7 +8,7 @@ You will notice that some of the models (e.g. the `person` and `trajectory` mode
 
 Both systems execute fully and produce meaningful results (JSON statistics) that can be visualized in the provided Flask-based UI.
 
-Note: the code in this repository is a sanitized version of the actual running code - e.g. we have anonymized the data and removed code that handles integration with the actual system. Please see the the [technical report](static/technical_report.pdf) which contains more information about the sanitization and for the mathetical formalism behind the systems.
+Note: the code in this repository is a sanitized version of the actual running code - e.g. we have anonymized the data and removed code that handles integration with the actual system. Please see the the [technical documentation](technical_documentation.pdf) which contains more information about the sanitization and for the mathetical formalism behind the systems.
 
 
 ## 1. MIT COVID-19 Risk Model (RM)
@@ -35,6 +35,7 @@ Please refer to the readme in [`situational_awareness/`](situational_awareness/R
 
 ## Directory Overview
 
+- `technical_documentation.pdf`: Documentation of math definitions and derivations to build the RM and SA systems.
 - `models`: Code for the RM `person`, `trajectory`, `action`, `infection` and `prevalence` models.
 - `analyses`: Code for various RM analyses that can be performed after a scenario is run (the `analysis` computes statistics from the outcome of the `models`)
 - `scheduler`: Code that performs RM scenario runs. A scenario comprises various models and analyses
